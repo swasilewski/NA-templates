@@ -12,6 +12,10 @@ TEST_CASE("size of vector", "[container_wrapper]")
 
     container_wrapper<std::vector<int>> c2 = std::vector<int>{ 1, 2, 3 };
     REQUIRE(c2.size() == 3);
+
+    std::vector<int> v1;
+    container_wrapper<std::vector<int>> c3 = v1;
+    REQUIRE(c3.size() == 0);
 }
 
 TEST_CASE("size of list", "[container_wrapper]")

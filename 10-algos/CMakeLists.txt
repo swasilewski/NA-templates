@@ -1,3 +1,7 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(test CXX)
+
 add_executable(11-algos
     11-algos.cpp
     implementation.cpp
