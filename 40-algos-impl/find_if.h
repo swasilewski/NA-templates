@@ -5,11 +5,11 @@ namespace training
 	template<typename InputIt, typename UnaryPredicate>
 	InputIt find_if(InputIt begin, InputIt end, UnaryPredicate pred)
 	{
-		for(InputIt it=begin;it<end;it++)
+		for(;begin<end;begin++)
 		{
-			if(pred(*it))
+			if(pred(*begin))
 			{
-				return it;
+				return begin;
 			}
 		}
 		return end;
