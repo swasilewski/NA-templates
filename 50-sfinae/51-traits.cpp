@@ -22,6 +22,7 @@ TEST_CASE("detect member type", "[sfinae]")
     CHECK(has_type_typedef<some_metafunction>::value == true);
 }
 
+
 TEST_CASE("detect member variable", "[sfinae]")
 {
     CHECK(has_member_variable<empty>::value == false);
